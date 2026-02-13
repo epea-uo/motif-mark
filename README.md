@@ -49,4 +49,4 @@ The output of
 ```bash
 ./motif-mark-oop.py -f Figure_1.fasta -m Fig_1_motifs.txt
 ```
-is this png names Figure_1.png
+is this png named Figure_1.png:
