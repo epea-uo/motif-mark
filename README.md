@@ -49,4 +49,7 @@ The output of
 ```bash
 ./motif-mark-oop.py -f Figure_1.fasta -m Fig_1_motifs.txt
 ```
-is this png named Figure_1.png:
+is this image (named Figure_1.png):
+
+<img width="1021" height="440" alt="Figure_1" src="https://github.com/user-attachments/assets/d52c55f3-d180-44ce-8289-9e0a3eb1ebe0" />
+
