@@ -21,7 +21,7 @@ Usage
 Run the script with a FASTA file and a motif list (one motif per line):
 
 ```bash
-python3 motif-mark-oop.py -f Figure_1.fasta -m Fig_1_motifs.txt
+./motif-mark-oop.py -f Figure_1.fasta -m Fig_1_motifs.txt
 ```
 
 Output
@@ -41,3 +41,12 @@ Customization
 Legend
 ------
 A legend is drawn on the right with a boxed border and the title "Motif" above the box. It uses the same colors assigned to motifs.
+
+Example Run:
+------
+The output of 
+
+```bash
+./motif-mark-oop.py -f Figure_1.fasta -m Fig_1_motifs.txt
+```
+is this png names Figure_1.png
