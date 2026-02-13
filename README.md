@@ -51,5 +51,6 @@ The output of
 ```
 is this image (named Figure_1.png):
 
-<img width="1021" height="440" alt="Figure_1" src="https://github.com/user-attachments/assets/d52c55f3-d180-44ce-8289-9e0a3eb1ebe0" />
+<img width="1021" height="440" alt="Figure_1" src="https://github.com/user-attachments/assets/5eb27127-5486-4307-87a5-0b899c47a48c" />
+
 
