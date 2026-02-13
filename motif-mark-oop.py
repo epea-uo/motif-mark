@@ -56,10 +56,10 @@ class Sequence:
         regex_motif = ''
         for base in motif.upper():
             regex_motif += iupac_DNA.get(base, base)
-        motif_pos = []
-        pattern = re.compile(regex_motif, re.IGNORECASE)
-        for match in pattern.finditer(seq):
-            motif_pos.append(match.start())
+        motif_pos = set()
+        look = re.compile(r'(?={})'.format(regex_motif), re.IGNORECASE)
+        for m in look.finditer(seq):
+            motif_pos.add(m.start()+1)
         return motif_pos  
     def get_introns(self, seq):
         """
@@ -208,8 +208,11 @@ with open("oneline.fasta", "r") as fasta:
             for motif_index, motif in enumerate(motif_list):
                 motif_color = get_motif_color(motif_index)
                 motif_locations = seq_obj.motif_search(nucl_seq, motif)
-                motif_len = len(motif)
+                #print(f"gene: {header}, motif: {motif}, locations: {motif_locations}")  
+                motif_len = len(motif)  
                 for motif_location in motif_locations:
+                    # if motif == "YYYYYYYYYY":
+                    #     print(f"Gene: {header}, Location: {motif_location}")  # Print motif location for debugging
                     motif_obj = Motif(motif, motif_location, motif_color)
                     motif_obj.plot_motif(context, gene_num)
     seq_obj.plot_legend(context, motif_list)
